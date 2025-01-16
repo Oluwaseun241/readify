@@ -11,6 +11,10 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
+        tabBarLabelStyle: {
+          fontFamily: "ArimaSemiBold",
+          fontSize: 10,
+        },
         tabBarActiveTintColor: Colors.primary.tabIconSelected,
         tabBarInactiveTintColor: Colors.primary.tabIconDefault,
         headerShown: false,
@@ -35,11 +39,7 @@ export default function TabLayout() {
         name="bookstore"
         options={{
           title: "Bookstore",
-          tabBarIcon: ({ color, focused }) => (
-            <Bookstore
-              color={focused ? Colors.primary.tabIconSelected : color}
-            />
-          ),
+          tabBarIcon: ({ color, focused }) => <Bookstore color={color} />,
         }}
       />
 
@@ -47,9 +47,7 @@ export default function TabLayout() {
         name="search"
         options={{
           title: "Search",
-          tabBarIcon: ({ color, focused }) => (
-            <Search color={focused ? Colors.primary.tabIconSelected : color} />
-          ),
+          tabBarIcon: ({ color, focused }) => <Search color={color} />,
         }}
       />
     </Tabs>

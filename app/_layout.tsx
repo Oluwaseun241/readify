@@ -10,6 +10,12 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded] = useFonts({
+    ArimaLight: require("@/assets/fonts/Arima-Light.ttf"),
+    ArimaMedium: require("@/assets/fonts/Arima-Medium.ttf"),
+    ArimaRegular: require("@/assets/fonts/Arima-Regular.ttf"),
+    ArimaSemiBold: require("@/assets/fonts/Arima-SemiBold.ttf"),
+    ArimaBold: require("@/assets/fonts/Arima-Bold.ttf"),
+
     SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
   });
 
