@@ -12,6 +12,7 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors.primary.tabIconSelected,
+        tabBarInactiveTintColor: Colors.primary.tabIconDefault,
         headerShown: false,
       }}
     >
@@ -19,18 +20,14 @@ export default function TabLayout() {
         name="home"
         options={{
           title: "Home",
-          tabBarIcon: ({ color, focused }) => (
-            <Home color={focused ? Colors.primary.tabIconSelected : color} />
-          ),
+          tabBarIcon: ({ color, focused }) => <Home color={color} />,
         }}
       />
       <Tabs.Screen
         name="library"
         options={{
           title: "Library",
-          tabBarIcon: ({ color, focused }) => (
-            <Library color={focused ? Colors.primary.tabIconSelected : color} />
-          ),
+          tabBarIcon: ({ color, focused }) => <Library color={color} />,
         }}
       />
 

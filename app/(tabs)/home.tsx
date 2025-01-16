@@ -1,9 +1,10 @@
-import { SafeAreaView, Text } from "react-native";
+import { Text } from "react-native";
+import ScreenWrapper from "@/components/ScreenWrapper";
 
 export default function home() {
   return (
-    <SafeAreaView className="flex-1 items-center justify-center">
+    <ScreenWrapper>
       <Text className="text-white text-lg">Cooking...</Text>
-    </SafeAreaView>
+    </ScreenWrapper>
   );
 }
