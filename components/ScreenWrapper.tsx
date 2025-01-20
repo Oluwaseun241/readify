@@ -12,7 +12,7 @@ const ScreenWrapper = ({ style, children }: ScreenWrapperProps) => {
         {
           paddingTop,
           flex: 1,
-          backgroundColor: Colors.primary.background,
+          backgroundColor: Colors.primary.backgroundHeader,
         },
         style,
       ]}

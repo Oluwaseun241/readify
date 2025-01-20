@@ -1,11 +1,14 @@
-import { Text } from "react-native";
+import { Text, View } from "react-native";
 import ScreenWrapper from "@/components/ScreenWrapper";
+import Header from "@/components/Header";
 
 export default function home() {
   return (
-    /* header */
     <ScreenWrapper>
-      <Text className="text-lg">Hey</Text>
+      <Header />
+      <View className="m-5">
+        <Text>Are you ready for your daily gaol?</Text>
+      </View>
     </ScreenWrapper>
   );
 }
