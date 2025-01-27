@@ -4,21 +4,16 @@ import { FlatList, Image, Pressable, Text, View } from "react-native";
 const Item = ({ image }: any) => {
   return (
     <View className="my-4 ml-5">
-      <Image source={image} resizeMode="contain" className="w-24 h-36" />
+      <Image source={image} resizeMode="contain" className="" />
     </View>
   );
 };
 
-const Trending = () => {
+const Fictional = () => {
   return (
     <View>
-      <View className="flex flex-row justify-between my-4 mx-5">
-        <Text className="text-xl font-[ArimaBold]">Trending</Text>
-        <Pressable onPress={() => console.log("See all")}>
-          <Text className="font-[ArimaMedium] text-primary-textTint">
-            See all
-          </Text>
-        </Pressable>
+      <View className="my-4 mx-5">
+        <Text className="text-xl font-[ArimaBold]">Fictional</Text>
       </View>
       <FlatList
         data={Data}
@@ -31,4 +26,4 @@ const Trending = () => {
   );
 };
 
-export default Trending;
+export default Fictional;

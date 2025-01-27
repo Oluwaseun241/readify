@@ -17,7 +17,7 @@ const ScreenWrapper = ({ style, children }: ScreenWrapperProps) => {
         style,
       ]}
     >
-      <StatusBar barStyle="default" />
+      <StatusBar barStyle="dark-content" />
       {children}
     </View>
   );
