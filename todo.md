@@ -1,7 +1,7 @@
 - [x] wrap scrollview around home
-- [] sort image width thing
-- [] finish continue reading
-- [] polish fictional
+- [x] sort image width thing
+- [x] finish continue reading
+- [x] polish fictional
 - [] library screen
 - [] bookstore screen
 - [] splash screen and onboarding screen

@@ -1,10 +1,14 @@
-import { Data } from "@/constants/data";
+import { FictionData } from "@/constants/data";
 import { FlatList, Image, Pressable, Text, View } from "react-native";
 
 const Item = ({ image }: any) => {
   return (
     <View className="my-4 ml-5">
-      <Image source={image} resizeMode="contain" className="" />
+      <Image
+        source={image}
+        resizeMode="contain"
+        className="w-[120px] h-[180px]"
+      />
     </View>
   );
 };
@@ -12,11 +16,11 @@ const Item = ({ image }: any) => {
 const Fictional = () => {
   return (
     <View>
-      <View className="my-4 mx-5">
+      <View className="mt-6 mx-5">
         <Text className="text-xl font-[ArimaBold]">Fictional</Text>
       </View>
       <FlatList
-        data={Data}
+        data={FictionData}
         renderItem={({ item }) => <Item image={item.image} />}
         keyExtractor={(item) => item.id}
         horizontal={true}

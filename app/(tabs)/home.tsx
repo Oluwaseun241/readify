@@ -1,5 +1,5 @@
 import { ScrollView, Text, View } from "react-native";
-import ScreenWrapper from "@/components/ScreenWrapper";
+import ScreenWrapper from "@/components/common/ScreenWrapper";
 import Header from "@/components/Header";
 import SearchInput from "@/components/Search";
 import Trending from "@/components/Trending";

@@ -1,5 +1,5 @@
 import { Colors } from "@/constants/Colors";
-import { Data } from "@/constants/data";
+import { ContinueData } from "@/constants/data";
 import { Rating } from "@kolking/react-native-rating";
 import { useCallback, useState } from "react";
 import { FlatList, Image, Pressable, Text, View } from "react-native";
@@ -14,8 +14,12 @@ const Item = ({ image }: any) => {
     [rating],
   );
   return (
-    <View className="flex-row gap-6 p-5 my-4 ml-5 bg-primary-backgroundHeader rounded-xl">
-      <Image source={image} resizeMode="contain" className="w-24 h-36" />
+    <View className="flex-row gap-6 p-5 ml-5 bg-primary-backgroundHeader rounded-xl">
+      <Image
+        source={image}
+        resizeMode="contain"
+        className="w-[80px] h-[120px]"
+      />
       <View>
         <Text className="font-[ArimaMedium] text-lg">Queen Charlotte</Text>
         <Text className="font-[ArimaLight] text-primary-textTint text-sm">
@@ -47,11 +51,11 @@ const Item = ({ image }: any) => {
 const Continue = () => {
   return (
     <View>
-      <View className="my-2 mx-5">
+      <View className="my-4 mx-5">
         <Text className="text-xl font-[ArimaBold]">Continue reading</Text>
       </View>
       <FlatList
-        data={Data}
+        data={ContinueData}
         renderItem={({ item }) => <Item image={item.image} />}
         keyExtractor={(item) => item.id}
         horizontal={true}
