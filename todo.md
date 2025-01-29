@@ -2,7 +2,7 @@
 - [x] sort image width thing
 - [x] finish continue reading
 - [x] polish fictional
-- [] library screen
+- [x] library screen
 - [] bookstore screen
 - [] splash screen and onboarding screen
 - [] others
