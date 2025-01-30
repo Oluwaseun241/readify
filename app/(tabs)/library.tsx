@@ -8,7 +8,7 @@ export default function library() {
   return (
     <ScreenWrapper>
       <HeaderWrapper onBackPress={() => router.navigate("/home")} />
-      <ScrollView>
+      <ScrollView className="bg-primary-background">
         <Library />
       </ScrollView>
     </ScreenWrapper>

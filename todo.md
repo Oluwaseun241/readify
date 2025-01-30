@@ -3,6 +3,6 @@
 - [x] finish continue reading
 - [x] polish fictional
 - [x] library screen
-- [] bookstore screen
+- [wip] bookstore screen
 - [] splash screen and onboarding screen
 - [] others

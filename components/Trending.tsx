@@ -15,7 +15,7 @@ const Item = ({ image }: any) => {
 
 const Trending = () => {
   return (
-    <View className="mt-0">
+    <View className="mt-2">
       <View className="flex flex-row justify-between mx-5">
         <Text className="text-xl font-[ArimaBold]">Trending</Text>
         <Pressable onPress={() => console.log("See all")}>

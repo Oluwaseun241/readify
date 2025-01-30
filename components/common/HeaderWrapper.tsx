@@ -14,7 +14,7 @@ const HeaderWrapper: React.FC<HeaderProps> = ({
   onRightPress,
 }) => {
   return (
-    <View className="flex flex-row items-center justify-between bg-primary-backgroundHeader">
+    <View className="mb-4 flex flex-row items-center justify-between bg-primary-backgroundHeader">
       <Pressable className="mx-5" onPress={onBackPress}>
         <BackIcon width={15} height={15} />
       </Pressable>
