@@ -131,3 +131,26 @@ export const BookStoreData = [
     image: require("@/assets/images/book3.png"),
   },
 ];
+
+export const BookStoreGenresData = [
+  {
+    id: "1",
+    genre: "Fiction",
+    image: require("@/assets/images/book10.png"),
+  },
+  {
+    id: "2",
+    genre: "War",
+    image: require("@/assets/images/book11.png"),
+  },
+  {
+    id: "3",
+    genre: "Fantasy",
+    image: require("@/assets/images/book2.png"),
+  },
+  {
+    id: "4",
+    genre: "Thriller",
+    image: require("@/assets/images/book3.png"),
+  },
+];
