@@ -1,6 +1,7 @@
 import { LibraryData } from "@/constants/data";
 import { FlatList, Image, Pressable, Text, View } from "react-native";
 import Details from "@/assets/icon/details.svg";
+import { router } from "expo-router";
 
 const Item = ({ image, title, author, progress }: any) => {
   return (
@@ -22,7 +23,10 @@ const Item = ({ image, title, author, progress }: any) => {
             </Text>
           </View>
         </View>
-        <Pressable className="justify-center">
+        <Pressable
+          className="justify-center"
+          onPress={() => router.push("/_sitemap")}
+        >
           <Details />
         </Pressable>
       </View>

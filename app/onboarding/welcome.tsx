@@ -2,7 +2,7 @@ import ScreenWrapper from "@/components/common/ScreenWrapper";
 import { router } from "expo-router";
 import { Image, View, Text, TouchableOpacity } from "react-native";
 
-export default function Welcome() {
+export default function welcome() {
   return (
     <ScreenWrapper>
       <View>
