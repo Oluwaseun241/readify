@@ -41,18 +41,20 @@ const Library = () => {
       <View className="mt-6 mx-5">
         <Text className="text-xl font-[ArimaBold]">Library</Text>
       </View>
-      <FlatList
-        data={LibraryData}
-        renderItem={({ item }) => (
-          <Item
-            image={item.image}
-            title={item.title}
-            author={item.author}
-            progress={item.progress}
-          />
-        )}
-        keyExtractor={(item) => item.id}
-      />
+      <View>
+        <FlatList
+          data={LibraryData}
+          renderItem={({ item }) => (
+            <Item
+              image={item.image}
+              title={item.title}
+              author={item.author}
+              progress={item.progress}
+            />
+          )}
+          keyExtractor={(item) => item.id}
+        />
+      </View>
     </View>
   );
 };

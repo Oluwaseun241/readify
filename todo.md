@@ -7,3 +7,4 @@
 - [wip] search screen
 - [wip] splash screen and onboarding screen
 - [] others
+- [urgent] sort virtualization error on library screen
