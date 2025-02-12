@@ -38,7 +38,7 @@ export default function welcome() {
         <View className="items-center">
           <TouchableOpacity
             onPress={() => router.navigate("/home")}
-            className="bg-primary-text mt-4 p-4 rounded-full w-[185px]"
+            className="bg-primary-text mt-4 p-4 rounded-full w-[195px]"
           >
             <Text className="text-center font-[ArimaBold] text-primary-backgroundHeader">
               Explore

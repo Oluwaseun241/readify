@@ -7,10 +7,12 @@ import "@/assets/global.css";
 import CustomSplash from "./onboarding/splash";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
-//SplashScreen.preventAutoHideAsync();
+SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded, setLoaded] = useState(false);
+  const [showSplash, setShowSplash] = useState(true);
+
   let [fontsLoaded] = useFonts({
     ArimaLight: require("@/assets/fonts/Arima-Light.ttf"),
     ArimaMedium: require("@/assets/fonts/Arima-Medium.ttf"),
@@ -25,13 +27,16 @@ export default function RootLayout() {
     const loadApp = async () => {
       if (fontsLoaded) {
         await SplashScreen.hideAsync();
-        setLoaded(true);
+        setTimeout(() => {
+          setShowSplash(false);
+          setLoaded(true);
+        }, 5000);
       }
     };
     loadApp();
   }, [fontsLoaded]);
 
-  if (!loaded) {
+  if (showSplash) {
     return <CustomSplash />;
   }
 

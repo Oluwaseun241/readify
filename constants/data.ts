@@ -15,6 +15,22 @@ export const TrendingData = [
     id: "4",
     image: require("@/assets/images/book4.png"),
   },
+  {
+    id: "5",
+    image: require("@/assets/images/book5.png"),
+  },
+  {
+    id: "6",
+    image: require("@/assets/images/book6.png"),
+  },
+  {
+    id: "7",
+    image: require("@/assets/images/book7.png"),
+  },
+  {
+    id: "8",
+    image: require("@/assets/images/book8.png"),
+  },
 ];
 
 export const ContinueData = [
