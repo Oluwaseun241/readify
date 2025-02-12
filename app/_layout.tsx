@@ -25,7 +25,7 @@ export default function RootLayout() {
     const loadApp = async () => {
       if (fontsLoaded) {
         await SplashScreen.hideAsync();
-        //setLoaded(true);
+        setLoaded(true);
       }
     };
     loadApp();
