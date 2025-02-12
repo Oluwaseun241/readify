@@ -1,15 +1,17 @@
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "react-native-reanimated";
 import "@/assets/global.css";
+import CustomSplash from "./onboarding/splash";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
-SplashScreen.preventAutoHideAsync();
+//SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const [loaded] = useFonts({
+  const [loaded, setLoaded] = useState(false);
+  let [fontsLoaded] = useFonts({
     ArimaLight: require("@/assets/fonts/Arima-Light.ttf"),
     ArimaMedium: require("@/assets/fonts/Arima-Medium.ttf"),
     ArimaRegular: require("@/assets/fonts/Arima-Regular.ttf"),
@@ -20,13 +22,17 @@ export default function RootLayout() {
   });
 
   useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [loaded]);
+    const loadApp = async () => {
+      if (fontsLoaded) {
+        await SplashScreen.hideAsync();
+        //setLoaded(true);
+      }
+    };
+    loadApp();
+  }, [fontsLoaded]);
 
   if (!loaded) {
-    return null;
+    return <CustomSplash />;
   }
 
   return (

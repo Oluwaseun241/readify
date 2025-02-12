@@ -1,8 +1,13 @@
 import ScreenWrapper from "@/components/common/ScreenWrapper";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { router } from "expo-router";
 import { Image, View, Text, TouchableOpacity } from "react-native";
 
 export default function welcome() {
+  const handleWelcome = async () => {
+    await AsyncStorage.setItem("hasLaunched", "true");
+    router.navigate("/home");
+  };
   return (
     <ScreenWrapper>
       <View>
