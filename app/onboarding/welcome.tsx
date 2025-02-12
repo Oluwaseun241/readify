@@ -16,7 +16,7 @@ export default function welcome() {
         <Text className="font-[ArimaSemiBold] text-lg text-primary-textTint">
           Book app
         </Text>
-        <Text className="font-[ArimaBold] text-xl">
+        <Text className="font-[ArimaBold] text-[30px]">
           Reading is more {"\n"}entertaining
         </Text>
       </View>
@@ -30,14 +30,16 @@ export default function welcome() {
           an endless world of books, curated just for you.{"\n"} Browse, read,
           and enjoy!"
         </Text>
-        <TouchableOpacity
-          onPress={() => router.navigate("/home")}
-          className="bg-primary-text items-center mt-4 p-4 rounded-full"
-        >
-          <Text className="font-[ArimaBold] text-primary-backgroundHeader">
-            Explore
-          </Text>
-        </TouchableOpacity>
+        <View className="items-center">
+          <TouchableOpacity
+            onPress={() => router.navigate("/home")}
+            className="bg-primary-text mt-4 p-4 rounded-full w-[185px]"
+          >
+            <Text className="text-center font-[ArimaBold] text-primary-backgroundHeader">
+              Explore
+            </Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </ScreenWrapper>
   );

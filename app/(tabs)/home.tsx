@@ -1,7 +1,7 @@
 import { ScrollView, Text, View } from "react-native";
 import Feather from "@expo/vector-icons/Feather";
 import ScreenWrapper from "@/components/common/ScreenWrapper";
-import SearchInput from "@/components/Search";
+import { SearchInput } from "@/components/Search";
 import Trending from "@/components/Trending";
 import Fictional from "@/components/Fictional";
 import Continue from "@/components/Continue";

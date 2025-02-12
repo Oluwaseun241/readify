@@ -154,3 +154,86 @@ export const BookStoreGenresData = [
     image: require("@/assets/images/book3.png"),
   },
 ];
+
+export const TrendingSearchData = [
+  {
+    id: "1",
+    title: "The Great Gatsby",
+  },
+  {
+    id: "2",
+    title: "To Kill a Mockingbird",
+  },
+  {
+    id: "3",
+    title: "1984",
+  },
+  {
+    id: "4",
+    title: "Pride and Prejudice",
+  },
+  {
+    id: "5",
+    title: "Moby-Dick",
+  },
+  {
+    id: "6",
+    title: "The Catcher in the Rye",
+  },
+  {
+    id: "7",
+    title: "Brave New World",
+  },
+  {
+    id: "8",
+    title: "The Lord of the Rings",
+  },
+  {
+    id: "9",
+    title: "The Hobbit",
+  },
+  {
+    id: "10",
+    title: "Harry Potter and the Sorcerer's Stone",
+  },
+  {
+    id: "11",
+    title: "War and Peace",
+  },
+  {
+    id: "12",
+    title: "Crime and Punishment",
+  },
+  {
+    id: "13",
+    title: "The Odyssey",
+  },
+  {
+    id: "14",
+    title: "The Divine Comedy",
+  },
+  {
+    id: "15",
+    title: "Jane Eyre",
+  },
+  {
+    id: "16",
+    title: "The Brothers Karamazov",
+  },
+  {
+    id: "17",
+    title: "Les Misérables",
+  },
+  {
+    id: "18",
+    title: "Wuthering Heights",
+  },
+  {
+    id: "19",
+    title: "Fahrenheit 451",
+  },
+  {
+    id: "20",
+    title: "Don Quixote",
+  },
+];
